@@ -1,0 +1,23 @@
+{
+  "name": "JBIS JSON Search",
+  "description": "JBIS JSON Search",
+  "version": "1.0",
+  "permissions": [
+    "activeTab", "tabs"
+  ], 
+  "content_scripts": [
+    {
+      "matches": [ "http://127.0.0.1/*" ],
+      "js": ["jquery-2.2.3.min.js", "process.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "JBIS JSON Search",
+    "default_icon": "horse.png"
+  },
+  "manifest_version": 2
+}
